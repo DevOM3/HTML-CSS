@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Visibility and z-index</title>
+    <style>
+        /*
+        1. visibility : hidden:
+        visibility when is hidden hides the element but occupies blank space
+        display:none when visibility is hidden then doesnt occupy the space
+
+        2. z-index will work only for position: relative, absolute, fixed and sticky:
+        z-index is used in the script when the elements overlap each other and we want to show the one particular element over the other element
+        the z-index accept number and it shows the element over the other when its z-index is greater than the other element 
+
+        */
+        .box{
+            width: 170px;
+            height: 170px;
+            background-origin: 2px solid black;
+        }
+        #box1{
+            background-color: red;
+        }
+        #box2{
+            visibility: hidden;
+            background-color: green;
+        }
+        #box3{
+            background-color: blue;
+        }
+        #box4{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>

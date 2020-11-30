@@ -1,0 +1,28 @@
+body{
+    background-color:rgb(245, 245, 117);
+}
+#usrnm{
+    color:red;
+    border: 2vh;
+    border-color: brown;
+    border-style: double;
+}
+.hello{
+    background-color: black;
+    color: white;
+}
+
+
+input:hover{
+    background-color: brown;
+    color: gold;
+    font-size: 75;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    background-color: brown;
+    color: gold;
+    font-size: 75;
+}

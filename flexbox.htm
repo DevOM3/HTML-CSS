@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flexbox</title>
+    <style>
+        .main{
+            border: 2px solid black;
+            display: flex;
+
+            /* Flex container properties usedafter initializing container as a flexbox */
+            flex-direction: row-reverse;
+            flex-direction: column;
+            flex-direction: column-reverse;
+            flex-direction: initial;
+            flex-direction: inherit;
+            flex-direction: unset;
+            flex-direction: row; /*Default*/
+
+            flex-wrap: wrap; /*Responsive design*/
+
+            justify-content:left;
+            align-items: center;
+        }
+
+        .div{
+            background-color:rgb(255, 255, 144);
+            padding: 2px;
+            margin: 2px;
+            margin-right: 11px;
+
+            /* Flex item properties */
+            /* order is used to change the order the greater th order th after the item will be checked*/
+            /*Flex-grow when used grows its space when the resolution is increased i.e. width of a webpage
+            the more the flex grow number the more that block willgrow or shrink*/
+
+            /*Flex basis whenn set flex-direction is row adjusts the width and when it is for the column it adjusts the height of the flex box*/
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>FlexBox</h1>
+    <div class="main">
+        <div class="div" id="d1">One</div>
+        <div class="div" id="d2">Two</div>
+        <div class="div" id="d3">Three</div>
+        <div class="div" id="d4">Four</div>
+        <div class="div" id="d5">Five</div>
+    </div>
+</body>
+</html>

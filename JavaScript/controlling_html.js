@@ -1,0 +1,1 @@
+document.getElementById('control_js').innerHTML = "Welcome to Paragraph";

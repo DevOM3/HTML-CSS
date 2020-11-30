@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pseudo selector</title>
+    <style>
+        /*this is a pseudo selector for one type*/
+        input[type="text"]{
+            font-size: 100px;
+        }
+
+        li:nth-child(3n + 3){
+            color: red;
+        }
+
+        li:nth-child(4){
+            color: rgb(0, 255, 106);
+        }
+
+        li:nth-child(even){
+            color: rgb(47, 0, 255);
+        }
+
+        li:nth-child(odd){
+            color: rgb(255, 0, 255);
+        }
+
+    </style>
+
+</head>
+<body>
+    Name : <input type="text" name="" id="">
+    Password : <input type="password">
+
+    <div>
+        <ul>
+            <li class="l" id="l1">1</li>
+            <li class="l" id="l2">2</li>
+            <li class="l" id="l3">3</li>
+            <li class="l" id="l4">4</li>
+            <li class="l" id="l5">5</li>
+            <li class="l" id="l6">6</li>
+            <li class="l" id="l7">7</li>
+            <li class="l" id="l8">8</li>
+            <li class="l" id="l9">9</li>
+            <li class="l" id="l10">10</li>
+        </ul>
+    </div>
+</body>
+</html>

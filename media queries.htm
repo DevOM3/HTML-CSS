@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Media queries</title>
+    <style>
+        .box{
+            background-color: red;
+            text-align: center;
+            font-size: larger;
+            display: none;
+        }
+
+/*media is used to manipulate the text for the responsiveness of the website to be compatoble for the pc and mobile phone or any device with any resolution*/
+/*It takes the input argument as the width which is compulsory for the responsiveness and then we can add attributes to it*/
+/*it is like a if condition taking the input in the @media ()*/
+        @media (max-width: 500px){
+            .box{
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="div1">iPhone</div>
+    <div class="box" id="div2">Computer</div>
+    <div class="box" id="div3">Tab</div>
+    <div class="box" id="div4">Laptop</div>
+</body>
+</html>

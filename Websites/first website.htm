@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Ceviche+One&display=swap" rel="stylesheet">
+    <title>PUBG Website</title>
+    <style>
+        body{
+            background:url("main1.jpg");
+            background-size: 1571px 800px;
+            background-repeat: no-repeat;
+        }
+
+        .head{
+            background-image: url("Banner.jpg");
+            background-repeat: no-repeat;
+            height: 51px;
+        }
+
+        #logo{
+            height: 51px;
+            width: 51px;
+            display: inline-block;
+        }
+
+        #insta{
+            border: 2px solid red;
+            text-align: right;
+            
+        }
+        
+        .nav{
+            border: 2px solid rgb(87, 87, 14);
+            border-radius: 9px;
+            padding: 7px;
+            position: sticky;
+        }
+
+        .div{
+            color: whitesmoke;
+            display: inline-block;
+            background-color: black;
+            padding-left:11px;
+            padding-right:11px;
+            margin: auto;
+            font-family: 'Ceviche One', cursive;
+            font-size: large;
+        }
+
+        a:hover{
+            color: rgb(214, 214, 0);
+            font-size: x-large;
+            cursor:pointer;
+        }
+
+        a.active{
+            font-size: larger;
+            text-decoration:dashed;
+            color: rgb(255, 102, 0);
+            font-style: bold;
+            font-family: 'Ceviche One', cursive;
+            font-size: xx-large;
+        }
+
+
+        #searchdiv{
+            float:right;
+            padding-right: 15px;
+        }
+
+        #search{
+            border-radius: 7px;
+            margin-top: 4px;
+            border: 2px;
+            width: 251px;
+            height: 21px;
+        }
+
+        .form{
+            margin-top: 222px;
+            width: 23%;
+            border: 2px solid lightgreen;
+            border-radius: 11px;
+            padding: 11px;
+        }
+
+        .form input{
+            display: block;
+        }
+
+        .inp{
+            margin: 21px;
+            width: 71%;
+        }
+
+        .submit{
+            display: inline-block;
+            width: 21%;
+            margin: auto;
+            margin-left: 5px;
+        }
+
+        #reset{
+            display: inline-block;
+            width: 21%;
+            margin: auto;
+            margin-left: 125px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header class="head">
+        <div>
+        <div class="up"><img id="logo" src="logo1.jpg"/></div>
+                <a href="https://www.instagram.com/theomlondhe/" id="insta">Instagram</a>
+        </div>
+        
+        <div class="nav">
+            <div class="div" id="div1"><a class="active">HOME</a></div>
+            <div class="div" id="div2"><a>DOWNLOAD</a></div>
+            <div class="div" id="div3"><a>ABOUT</a></div>
+            <div class="div" id="div4"><a>CONTACT US</a></div>
+            <div id="searchdiv"><input type="text"  id="search" name="Search" placeholder="Search Website"></div>
+        </div>
+    </header>
+    <div>
+        <form action="input_game_info.py" class="form">
+            <h3 style="color: whitesmoke;">Sign Up Here</h3>
+            <input type="text" name="First Name" class="inp" id="first" placeholder="First Name">
+            <input type="text" name="Last Name" id="last" class="inp" placeholder="Lastt Name">
+            <input type="text" name="Player Name" id="pname" class="inp" placeholder="Player Name">
+            <input type="number" name="Character ID" id="pid" class="inp" placeholder="Character ID">
+            <input type="email" name="Mail ID" id="mailid" class="inp" placeholder="E-mail ID">
+            <button id="reset">Reset</button>
+            <button class="submit">Submit</button>
+        </form>
+    </div>  
+</body>
+</html>

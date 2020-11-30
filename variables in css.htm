@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Variables in CSS</title>
+    <style>
+        /*when a variable is initiated in the root then it is accessible for the whole css style*/
+        :root{
+            /*variable starts with thw sign -- and then the variable name and then : and then the indicator value
+            
+            syntax
+            
+            --variable_name : value;*/
+            --happy-colour : yellow;
+        }
+        .div{
+            margin: 2em;
+            height: 5em;
+            width: 5em;
+            border: medium solid red;
+
+            /*variable must be used with the var keyword to denote that it is the variable and then the --variable_name */
+            background-color: var(--happy-colour);
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <div class="div"></div>
+        <div class="div"></div>
+        <div class="div"></div>
+    </div>
+</body>
+</html>
